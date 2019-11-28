@@ -2,3 +2,5 @@
   hosts: all
   tasks:
     - package: name='java-1.8.0-openjdk' state=latest
+      become: yes
+      become_method: su
