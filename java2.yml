@@ -1,6 +1,6 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-    - package: name='default-jdk' state=latest
+    - package: name='vlc' state=latest
       become: yes
       become_method: su
