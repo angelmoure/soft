@@ -1,10 +1,11 @@
 - name: install packages on a fresh Ubuntu
-  become: yes
-  sudo: yes
- 
+  hosts: all
+   
   tasks:
     - name: install all packages
     apt: name={{ item }} state=present
+    become: yes
+    become_method: su
     with_items:
     - vlc
     - audacity
