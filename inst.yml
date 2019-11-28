@@ -9,4 +9,4 @@
         - audacity
       become: yes
       become_method: su
-      state: latest
+     
