@@ -1,8 +1,5 @@
-- name: install packages on a fresh Ubuntu
-  hosts: local
-  user: "{{ username }}"
+- name: install packages
   sudo: yes
- 
   tasks:
     - name: install all packages
     apt: name={{ item }} state=present
