@@ -2,9 +2,4 @@
   become: yes
   become_method: su
   
-  tasks:
-    - name: install all packages
-    apt: name={{ item }} state=present
-    with_items:
-      - audacity
-      - vlc
+  
