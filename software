@@ -1,0 +1,11 @@
+- name: install packages on a fresh Ubuntu
+  hosts: local
+  user: "{{ username }}"
+  sudo: yes
+ 
+  tasks:
+    - name: install all packages
+    apt: name={{ item }} state=present
+    with_items:
+    - audacity
+    - vlc
