@@ -3,7 +3,8 @@
    
   tasks:
     - name: install all packages
-      apt: name: ['vlc', 'audacity'] state=present
+      apt: 
+        name: ['vlc', 'audacity'] state=present
       become: yes
       become_method: su
       
