@@ -1,4 +1,4 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-     package: name='java-1.8.0-openjdk' state=latest
+    - package: name='java-1.8.0-openjdk' state=latest
