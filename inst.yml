@@ -3,10 +3,7 @@
    
   tasks:
     - name: install all packages
-      apt: name={{ item }} state=present
+      apt: name: ['vlc', 'audacity'] state=present
       become: yes
       become_method: su
-      with_items:
-       - vlc
-       - audacity
-     
+      
