@@ -10,4 +10,7 @@
         - inkscape
       become: yes
       become_method: su
-     
+   - name: Upgrade all packages to the latest version
+     apt:
+      name: "*"
+      state: latest  
