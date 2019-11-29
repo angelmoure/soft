@@ -10,7 +10,4 @@
         - inkscape
         - aptitude
       
-    - name: Upgrade all packages to the latest version
-      apt:
-       name: "*"
-       state: latest  
+   
