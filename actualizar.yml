@@ -1,4 +1,4 @@
-- name: install packages on a fresh Ubuntu
+- name: Upgrade all packages to the latest version
   hosts: all
   become: yes
   tasks:
