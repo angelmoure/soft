@@ -1,7 +1,6 @@
 - name: install packages on a fresh Ubuntu
   hosts: all
   become: yes
-  become_method: su
   tasks:
     - name: install all packages
       apt: 
